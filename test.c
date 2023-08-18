@@ -13,6 +13,7 @@ int main() {
     }
     else{
         printf(" %d is Greater %d",b,a);  
+        printf("Akash"):
     }
 
 
