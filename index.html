@@ -1,28 +1,221 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Simple Chat App</title>
-</head>
-<body>
-    <h1>Hello Pranav </h1>
-    <h1>Hello Pranav </h1>
-    <h1>Hello Pranav </h1>
-    <h1>Hello Pranav </h1>
-    <h1>Hello Pranav </h1>
-    <h1>Hello India </h1>
-
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        
+        body, h1, h2, h3, p, ul, li {
+            margin: 0;
+            padding: 0;
+        }
 
     
-</body>
-</html>
+        header {
+            background-color: #fff; 
+            color: #e0e0e0; 
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
 
-  <h1>Chat App</h1>
-  <input type="text" id="roomInput" placeholder="Enter room name">
-  <button id="joinButton">Join Room</button>
-  <div id="messages"></div>
-  <input type="text" id="messageInput" placeholder="Enter your message">
-  <button id="sendButton">Send</button>
+        .logo h1 {
+            font-size: 24px;
+        }
 
-  
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #e0e0e0;
+        }
+
+        .join-box a {
+            display: inline-block;
+            background-color: #ff9900; 
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .join-box a:hover {
+            background-color: #ffcc00; 
+        }
+
+        .orange-box {
+            background-color: #ff9900;
+            color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .orange-box h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .orange-box p {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .orange-box .action-buttons {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .orange-box .action-buttons a {
+            display: inline-block;
+            background-color: #fff;
+            color: #ff9900; 
+            padding: 8px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .orange-box .action-buttons a:hover {
+            background-color: #ffcc00; 
+        }
+
+        .overview-box {
+            background-color: #f5f5f5; 
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .overview-box h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .overview-box p {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .overview-box ul {
+            list-style-type: disc;
+            text-align: left;
+            margin-left: 20px;
+        }
+
+        .overview-box ul li {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        .black-box {
+            background-color: #000; 
+            color: #fff; 
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .black-box h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .black-box p {
+            font-size: 14px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .black-box ul {
+            list-style-type: none;
+            text-align: left;
+            margin-left: 20px;
+        }
+
+        .black-box ul li {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        .black-box ul li:before {
+            content: "›"; 
+            margin-right: 5px;
+            color: #ff9900; 
+        }
+    </style>
+    <title>100xEngineers AI Accelerated 
+        Full-Stack Engineering</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>100xEngineers</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Mentors</a></li>
+                <li><a href="#">Curriculum</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </nav>
+        <div class="join-box">
+            <a href="#">Join Free Webinar</a>
+        </div>
+    </header>
+
+    <div class="orange-box">
+        <h2>Enter into a new era of programming</h2>
+        <p>AI Accelerated Full-Stack Engineering</p>
+        <p>The only software engineering cohort that teaches you to 10x your productivity using AI-accelerated programming.</p>
+        <div class="action-buttons">
+            <a href="#">Join Free Webinar</a>
+            <a href="#">Enroll Now</a>
+        </div>
+    </div>
+
+    <div class="overview-box">
+        <h3>Overview</h3>
+        <p>Master full-stack engineering like never before.</p>
+        <p>What's inside?</p>
+        <ul>
+            <li>Comprehensive curriculum designed by industry experts</li>
+            <li>Hands-on projects and real-world applications</li>
+            <li>AI-powered tools for enhanced learning</li>
+            <li>Expert mentoring and support</li>
+            <li>Flexible learning schedule</li>
+        </ul>
+    </div>
+
+    <div class="black-box">
+        <h3>Who is this for?</h3>
+        <p>Anyone who is looking to upskill themselves via learning Coding - no prior experience in coding is required.</p>
+        <ul>
+            <li>College students</li>
+            <li>Recent Graduates</li>
+            <li>First Time Professionals</li>
+        </ul>
+    </div>
+
+    <div class="orange-box">
+        <p>Be a part of a new era in programming.</p>
+        <p>Be a 100x Engineer!</p>
+        <div class="action-buttons">
+            <a href="#">Join Free Webinar</a>
+            <a href="#">Enroll Now</a>
+        </div>
+    </div>
 </body>
 </html>
